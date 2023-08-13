@@ -8,6 +8,7 @@ body, ul {
 .navbar {
   background-color: #333;
   overflow: hidden;
+  text-align: right; /* Align navbar content to the right */
 }
 
 .nav-list {
@@ -17,7 +18,7 @@ body, ul {
 }
 
 .nav-item {
-  float: left;
+  display: inline-block; /* Display items horizontally */
 }
 
 .nav-item a {
@@ -36,6 +37,7 @@ body, ul {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  right: 0; /* Position the dropdown to the right */
 }
 
 .dropdown-content a {
