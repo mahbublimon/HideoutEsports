@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Dropdown Menu Example</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Navbar with Dropdown</title>
 </head>
 <body>
-
-<select id="pageSelector" onchange="goToPage()">
-    <option value="" disabled selected>Select a page</option>
-    <option value="page1.html">Page 1</option>
-    <option value="page2.html">Page 2</option>
-    <option value="page3.html">Page 3</option>
-</select>
-
-<script>
-function goToPage() {
-    var selectElement = document.getElementById("pageSelector");
-    var selectedValue = selectElement.value;
-    if (selectedValue) {
-        window.location.href = selectedValue;
-    }
-}
-</script>
-
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#">Home</a></li>
+      <li class="nav-item dropdown">
+        <a href="#" class="dropbtn">Services</a>
+        <div class="dropdown-content">
+          <a href="#">Service 1</a>
+          <a href="#">Service 2</a>
+          <a href="#">Service 3</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="#">About</a></li>
+      <li class="nav-item"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 </body>
 </html>
